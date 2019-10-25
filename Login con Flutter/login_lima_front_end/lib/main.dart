@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 
 //1er Paso
   void main() => runApp(MyApp());
-
 //2do paso
-
   class MyApp extends StatelessWidget {
         // This widget is the root of your application.
         @override
@@ -18,22 +16,16 @@ import 'package:flutter/material.dart';
           );
         }
       }
-
 //3er Paso
-
   class MyHomePage extends StatefulWidget {
       MyHomePage({Key key, this.title}) : super(key: key);
-
       final String title;
       @override
-
       _MyHomePageState createState() => _MyHomePageState();
     }
 
     class _MyHomePageState extends State<MyHomePage> {
-      
       TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
-
       @override
       Widget build(BuildContext context) {
 
@@ -46,6 +38,7 @@ import 'package:flutter/material.dart';
               border:
                   OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
         );
+        
         final passwordField = TextField(
           obscureText: true,
           style: style,
@@ -55,6 +48,7 @@ import 'package:flutter/material.dart';
               border:
                   OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
         );
+        
         final loginButon = Material(
           elevation: 5.0,
           borderRadius: BorderRadius.circular(30.0),
@@ -106,7 +100,3 @@ import 'package:flutter/material.dart';
         );
       }
     }
-
-
-
-  
